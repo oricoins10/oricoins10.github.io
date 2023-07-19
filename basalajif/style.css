@@ -68,6 +68,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7.3px);
 -webkit-backdrop-filter: blur(7.3px);
 border: 1px solid rgba(255, 255, 255, 0.33);
+transform-style: preserve-3d;
+transform: perspective(1000px);
 }  
 
 
@@ -75,16 +77,18 @@ border: 1px solid rgba(255, 255, 255, 0.33);
     border: 5px solid rgba(178, 14, 228, 0.316);
     border-radius: 10px;
     margin-right: 100px;
-  
+    transform: translateZ(20px)
 }
 
-
+.mainReasons-child h1, h6{
+    transform: translateZ(20px)
+}
 
 .frameContainer{
     text-align: center;
     display: block;
     margin: 0 auto;
-    margin-top: 700px;
+    margin-top: 1250px;
     /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
